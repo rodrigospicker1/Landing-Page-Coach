@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useState } from "react";
-import TypingAnimation from "@/components/TypingAnimation";
 
 export function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +11,9 @@ export function Hero() {
     <div className="">
       <div className="scroll-smooth">
         {/* NAVBAR */}
-        <nav className="fixed top-0 left-0 w-full text-white z-50 shadow-md">
+        <nav className="fixed top-0 left-0 w-full text-white z-50 shadow-md backdrop-blur-sm" style={{
+          background: 'linear-gradient(to bottom, rgba(31, 41, 55, 0.95) 0%, rgba(31, 41, 55, 0.7) 40%, rgba(31, 41, 55, 0.3) 70%, rgba(31, 41, 55, 0) 100%)'
+        }}>
           <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" className="text-2xl font-bold text-[var(--brand-green)]">
               <Image
@@ -37,17 +38,17 @@ export function Hero() {
                 menuOpen ? "block" : "hidden"
               } md:block`}
             >
-              <a href="#home" className="">
-                Sobre
+              <a href="#benefits" className="">
+                Benefícios
               </a>
-              <a href="#about" className="">
+              <a href="#testimonials" className="">
+                Depoimentos
+              </a>
+              <a href="#price" className="">
                 Planos
               </a>
-              <a href="#services" className="">
-                FAC
-              </a>
-              <a href="#contact" className="">
-                Benefícios
+              <a href="#about" className="" >
+                Sobre
               </a>
             </div>
           </div>
@@ -74,8 +75,8 @@ export function Hero() {
           </div>
           <div className="flex items-center flex-col ml-[10%] z-2">
             <div className="text-3xl lg:text-5xl bg-clip-text text-center text-gray-200">
-              Não é só sobre <span className="text-[var(--brand-green)] font-bold "><TypingAnimation text="treino" className="text-[var(--brand-green)] font-bold" /></span>, é sobre <br></br>
-              <TypingAnimation text="transformação real!" className="text-[var(--brand-green)] font-bold" /> 
+              Não é só sobre <span className="text-[var(--brand-green)] font-bold ">treino</span>, é sobre <br></br>
+              <span className="text-[var(--brand-green)] font-bold ">transformação</span> real! 
             </div>
 
             <div className="text-gray-400 mt-10 text-md col-6 w-[70%] text-center">

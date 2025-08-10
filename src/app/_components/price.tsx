@@ -2,7 +2,7 @@ import { PriceCard } from "./card/price_card";
 
 export function Price() {
   return (
-    <div className="mt-30">
+    <div className="mt-30" id="price">
       <div className="text-[var(--brand-green)] font-bold text-3xl text-center">
         Preços
       </div>

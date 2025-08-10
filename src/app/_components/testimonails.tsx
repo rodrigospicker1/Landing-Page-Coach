@@ -2,7 +2,7 @@ import { TestimonialCard } from "./card/testimonial_card";
 
 export function Testimonials() {
   return (
-    <div className="mt-50">
+    <div className="mt-50" id="testimonials">
       <div className="text-[var(--brand-green)] font-bold text-3xl text-center">
         Depoimentos de alunos
       </div>

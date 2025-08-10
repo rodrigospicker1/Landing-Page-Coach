@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function AboutMe() {
   return (
-    <div className="mt-50">
+    <div className="mt-50" id="about">
         <div className="text-[var(--brand-green)] font-bold text-3xl text-center">
             Quem sou eu?
         </div>
@@ -28,6 +28,9 @@ export function AboutMe() {
                 <div>Tem uma <span className="font-bold text-[#41974B]">metodologia unica</span> de treino aplicada como nunca antes vista</div>
             </div>
         </div>
+        <div className="text-gray-400 font-bold text-center text-sm mt-5">
+            Everton: CREF 000000-0000
+        </div>
 
         <div className="mt-30 flex flex-col items-center justify-center">
             <Button variant="ghost" className="text-2xl bg-white p-6 font-bold rounded-xl hover:p-7">
@@ -45,6 +48,7 @@ export function AboutMe() {
                 />
             </div>
         </div>
+
     </div>
   );
 }

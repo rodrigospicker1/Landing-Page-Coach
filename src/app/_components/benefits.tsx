@@ -2,7 +2,7 @@ import { BenefitCard } from "./card/benefit_card";
 
 export function Benefits() {
   return (
-    <div>
+    <div id="benefits">
       <div className="text-[var(--brand-green)] font-bold text-3xl text-center">
         Benefícios
       </div>
