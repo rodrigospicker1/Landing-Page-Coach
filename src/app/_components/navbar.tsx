@@ -52,7 +52,7 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-white hover:text-gray-300 px-3 py-2 text-sm font-medium transition-colors"
                 >
                   {item.name}
                 </Link>
