@@ -6,7 +6,7 @@ export function Price() {
       <div className="text-[var(--brand-green)] font-bold text-3xl text-center">
         Preços
       </div>
-      <div className="flex flex-wrap justify-center gap-5 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5 mt-10 px-4 max-w-7xl mx-auto">
         <PriceCard
             name="Combo treino mensal"
             price={69.99}

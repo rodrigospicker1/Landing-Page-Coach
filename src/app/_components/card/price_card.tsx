@@ -13,10 +13,10 @@ type PriceCardProps = {
 
 export function PriceCard({ name, price, offer, includeList, notIncludeList }: PriceCardProps) {
   return (
-    <div className={`w-80 bg-gradient-to-b from-[#BFBFBF] via-[#0C0C0C] to-[#929292] p-0.5 rounded-lg relative overflow-hidden ${offer ? 'mb-15' : 'mt-15'}`}>
+    <div className={` bg-gradient-to-b from-[#BFBFBF] via-[#0C0C0C] to-[#929292] p-0.5 rounded-lg relative overflow-hidden ${offer ? 'md:mb-15' : 'md:mt-15'}`}>
         {
             offer && 
-            <div className="absolute rotate-315 font-bold bg-gradient-to-br from-fuchsia-500 via-cyan-400 to-green-400 z-2 w-40 pl-8 ml-[-40px] text-sm p-1">
+            <div className="absolute rotate-315 font-bold bg-gradient-to-br from-fuchsia-500 via-cyan-400 to-green-400 z-2 w-40 pl-8 ml-[-40px] text-sm p-1"> 
                 OFERTA
             </div>
         }

@@ -3,14 +3,14 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useState } from "react";
+import App from "./navbar";
 
 export function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="">
-      <div className="scroll-smooth">
-        {/* NAVBAR */}
+      {/* <div className="scroll-smooth">
         <nav className="fixed top-0 left-0 w-full text-white z-50 shadow-md backdrop-blur-sm" style={{
           background: 'linear-gradient(to bottom, rgba(31, 41, 55, 0.95) 0%, rgba(31, 41, 55, 0.7) 40%, rgba(31, 41, 55, 0.3) 70%, rgba(31, 41, 55, 0) 100%)'
         }}>
@@ -22,7 +22,7 @@ export function Hero() {
                   width={300}
                   height={600}
                   className="relative w-full h-full object-cover"
-                  priority // melhora o carregamento para imagens acima da dobra
+                  priority 
               />
             </a>
 
@@ -53,7 +53,8 @@ export function Hero() {
             </div>
           </div>
         </nav>
-      </div>
+      </div> */}
+      <App />
 
       <section className="py-50 px-10 ">
         <div className="flex justify-center items-end">
@@ -73,7 +74,7 @@ export function Hero() {
                   priority // melhora o carregamento para imagens acima da dobra
               />
           </div>
-          <div className="flex items-center flex-col ml-[10%] z-2">
+          <div className="flex items-center flex-col ml-0 md:ml-[10%] z-2">
             <div className="text-3xl lg:text-5xl bg-clip-text text-center text-gray-200">
               Não é só sobre <span className="text-[var(--brand-green)] font-bold ">treino</span>, é sobre <br></br>
               <span className="text-[var(--brand-green)] font-bold ">transformação</span> real! 
