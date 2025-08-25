@@ -4,49 +4,63 @@ export function Price() {
   return (
     <div className="mt-30" id="price">
       <div className="text-[var(--brand-green)] font-bold text-3xl text-center">
-        Preços
+        Pacotes
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5 mt-10 px-4 max-w-7xl mx-auto">
         <PriceCard
-            name="Combo treino mensal"
-            price={69.99}
+            name="Bronze"
             offer={false}
             includeList={[
-                "Treino personalizada por 1 mês", 
-                "Atendimento personalizado pelo whatsapp durante 1 mês"
+                "Anamnese", 
+                "Avaliação diagnóstica", 
+                "Planejamento de treino personalizado(musculação e aeróbico)", 
+                "Avaliação da execução dos principais exercícios através de vídeos gravados pelo aluno",
+                "Suporte direto via WhatsApp",
+                "Controle de aproveitamento de treino semanal com feedback trimestral",
+                "Reavaliação diagnóstica a cada 3 meses para analisar o progresso"
               ]
             }
             notIncludeList={[
-                "Dieta personalizada", 
-                "Acompanhamento semanal", 
+                "1 video chamada por mês com duração de aproximadamente 20 minutos para tirar as dúvidas em tempo real com um professor", 
+                "1 aula assistida por mês com duração de 60 minutos acompanhada pelo professor"
               ]
             }
         />
         <PriceCard
-            name="Combo dieta/treino semestral"
-            price={79.99}
+            name="Ouro"
             offer={true}
             includeList={[
-                "Dieta personalizada por 6 meses", 
-                "Treino personalizada por 6 meses", 
-                "Acompanhamento semanal por 6 mês", 
-                "Atendimento personalizado pelo whatsapp durante 6 meses"
+                "Anamnese", 
+                "Avaliação diagnóstica", 
+                "Planejamento de treino personalizado(musculação e aeróbico)", 
+                "Avaliação da execução dos principais exercícios através de vídeos gravados pelo aluno",
+                "Suporte direto via WhatsApp",
+                "Controle de aproveitamento de treino semanal com feedback trimestral",
+                "Reavaliação diagnóstica a cada 3 meses para analisar o progresso",
+                "1 video chamada por mês com duração de aproximadamente 20 minutos para tirar as dúvidas em tempo real com um professor",
+                "1 aula assistida por mês com duração de 60 minutos acompanhada pelo professor"
               ]
             }
-            notIncludeList={[]}
+            notIncludeList={[
+            ]}
         />
         <PriceCard
-            name="Combo dieta/treino mensal"
-            price={99.99}
+            name="Prata"
             offer={false}
             includeList={[
-                "Dieta personalizada por 1 mês", 
-                "Treino personalizada por 1 mês", 
-                "Acompanhamento semanal por 1 mês", 
-                "Atendimento personalizado pelo whatsapp durante 1 mês"
+                "Anamnese", 
+                "Avaliação diagnóstica", 
+                "Planejamento de treino personalizado(musculação e aeróbico)", 
+                "Avaliação da execução dos principais exercícios através de vídeos gravados pelo aluno",
+                "Suporte direto via WhatsApp",
+                "Controle de aproveitamento de treino semanal com feedback trimestral",
+                "Reavaliação diagnóstica a cada 3 meses para analisar o progresso",
+                "1 video chamada por mês com duração de aproximadamente 20 minutos para tirar as dúvidas em tempo real com um professor", 
               ]
             }
-            notIncludeList={[]}
+            notIncludeList={[
+              "1 aula assistida por mês com duração de 60 minutos acompanhada pelo professor"
+            ]}
         />
       </div>
     </div>

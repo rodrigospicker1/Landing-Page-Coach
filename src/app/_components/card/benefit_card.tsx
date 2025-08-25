@@ -10,9 +10,8 @@ type BenefitCardProps = {
 
 export function BenefitCard({ name, description, path }: BenefitCardProps) {
   return (
-    <div className="flex p-0.5 bg-[linear-gradient(to_right,#41974B_0%,#153118_25%,#41974B_62%,#1F4924_94%)] rounded-lg">
-        <div className="flex ">
-            <div className="w-90 backdrop-filter backdrop-blur-lg bg-opacity-50 p-6 rounded-lg z-2 bg-gray-900 border border-gray-700 ">
+    <div className="flex p-0.5 bg-[linear-gradient(to_right,#41974B_0%,#153118_25%,#41974B_62%,#1F4924_94%)] rounded-lg"> 
+            <div className="backdrop-filter backdrop-blur-lg bg-opacity-50 p-6 rounded-lg z-2 bg-gray-900 border border-gray-700 ">
                 <div className="flex items-center">
                     <div className="p-4 mr-6 bg-gray-600 col-4 rounded-full relative flex justify-center items-center">
                         <Image
@@ -28,7 +27,7 @@ export function BenefitCard({ name, description, path }: BenefitCardProps) {
                         { name }
                     </div>
                 </div>
-                <div className="text-gray-400 mt-2">
+                <div className="text-gray-400 mt-2 text-sm line-clamp-2 hover:line-clamp-none transition-all duration-300">
                     {description}
                 </div>
                 <div className="mt-4">
@@ -40,7 +39,6 @@ export function BenefitCard({ name, description, path }: BenefitCardProps) {
                     </Button>
                 </div>
             </div>
-        </div>
     </div>
   );
 }

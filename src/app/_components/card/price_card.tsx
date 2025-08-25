@@ -5,13 +5,12 @@ import Image from "next/image";
 
 type PriceCardProps = {
     name: String,
-    price: Number,
     offer: Boolean,
     includeList: string[];
     notIncludeList: string[];
 };
 
-export function PriceCard({ name, price, offer, includeList, notIncludeList }: PriceCardProps) {
+export function PriceCard({ name, offer, includeList, notIncludeList }: PriceCardProps) {
   return (
     <div className={` bg-gradient-to-b from-[#BFBFBF] via-[#0C0C0C] to-[#929292] p-0.5 rounded-lg relative overflow-hidden ${offer ? 'md:mb-15' : 'md:mt-15'}`}>
         {
@@ -23,12 +22,20 @@ export function PriceCard({ name, price, offer, includeList, notIncludeList }: P
         <div className="flex flex-col w-full bg-[linear-gradient(to_bottom,#252835_35%,#010101_98%)] rounded-lg p-4 relative h-full">
             
 
-            <div className="text-white text-md m-2 text-center">{name}</div>
+            <div className="text-white text-2xl font-bold m-2 text-center"> 
+                Pacote
+                <span className={
+                    name === "Ouro" ? 'text-yellow-400' :
+                    name === "Prata" ? 'text-gray-400' :
+                    name === "Bronze" ? 'text-[#cd7f32]' :
+                    'text-white'
+                }> {name}</span>
+            </div>
 
-            <div className="text-5xl text-white font-bold my-4 text-center">
+            {/* <div className="text-5xl text-white font-bold my-4 text-center">
                 {price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
                 <span className="text-sm text-gray-400">/mês</span>
-            </div>
+            </div> */}
 
             <div className="flex flex-col p-4 gap-4">
                 {includeList.map((item, index) => (
@@ -61,8 +68,8 @@ export function PriceCard({ name, price, offer, includeList, notIncludeList }: P
             
 
             <div className="flex items-center justify-center mt-4">
-            <button className="relative text-2xl text-white w-50 border border-[#3AB248] bg-[#323545] rounded-xl p-1 font-bold overflow-hidden group">
-                <span className="relative z-10">Adiquirir</span>
+            <button className="relative text-2xl text-white w-70 border border-[#3AB248] bg-[#323545] rounded-xl p-1 font-bold overflow-hidden group">
+                <span className="relative z-10">Quero saber mais</span>
                 <span className="absolute inset-0 bg-[#3AB248] transform scale-x-0 transition-transform duration-200 ease-in-out group-hover:scale-x-100 rounded-lg"></span>
             </button>
         </div>
