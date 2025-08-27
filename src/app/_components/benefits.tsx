@@ -21,7 +21,6 @@ export function Benefits() {
           height="281"
           src="https://www.youtube.com/embed/wuxNoxZQo4k"
           title="YouTube video player"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           className="rounded-2xl shadow-lg"
