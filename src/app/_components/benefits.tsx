@@ -15,10 +15,10 @@ export function Benefits() {
         Benefícios
       </div>
 
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 sm:px-6">
         <iframe
-          width="560"
-          height="315"
+          width="500"
+          height="281"
           src="https://www.youtube.com/embed/wuxNoxZQo4k"
           title="YouTube video player"
           frameBorder="0"
