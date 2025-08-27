@@ -24,11 +24,9 @@ export function Testimonials() {
         >
           <CarouselContent className="-ml-1">
             {[
-              { img: "/images/users/ana.jpg", name: "Ana Silva", star: 5 },
-              { img: "/images/users/duda.jpg", name: "Duda", star: 4.5 },
-              { img: "/images/users/justin.jpg", name: "Justin", star: 4.5 },
-              { img: "/images/users/maria.jpg", name: "Maria", star: 4 },
-              { img: "/images/users/simon.jpg", name: "Simon", star: 5 },
+              { img: "", name: "Natália", star: 5, testimonial: "Pensa na felicidade que eu estou, é o primeiro dia.. mas sinto que já venci a obesidade. com certeza com todo seu conhecimento, ensinamento e apoio até mesmo psicológico que você da para seus alunos!" },
+              { img: "", name: "Bruna", star: 5, testimonial: "Muito a agredecer por todo esse processo de mudança interna e externa🙌🙏 Um ótimo professional!" },
+              { img: "", name: "Tales", star: 5, testimonial: "Ótimo experiência! Não tive dificuldade com os treinos e percebi melhora estética e qualidade de vida desde que comecei a fazer." },
             ].map((testimonial, index) => (
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
@@ -36,7 +34,7 @@ export function Testimonials() {
                     img_path={testimonial.img} 
                     name={testimonial.name} 
                     star={testimonial.star}
-                    testimonial="Avaliação do aluno da consultoria de treinamento e dieta"
+                    testimonial={testimonial.testimonial}
                     index={index}
                   />
                 </div>

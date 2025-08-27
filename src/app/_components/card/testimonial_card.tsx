@@ -15,15 +15,17 @@ export function TestimonialCard({ img_path, star, name, testimonial, index = 0}:
 
     let fullStar = Math.floor(star);
     let hasHalfStar = fullStar != star ? true : false;
+
+    let photo = img_path ? img_path : "/images/icon/user.png";
     
     return (
         <div className="relative col-span-1">
             <div className="flex p-0.5 bg-[linear-gradient(to_right,#41974B_0%,#153118_25%,#41974B_62%,#1F4924_94%)] rounded-lg w-full">
                 <div className="flex rounded-lg w-full">
                     <div className="bg-gray-900/90 backdrop-filter backdrop-blur-lg p-6 rounded-lg w-full z-2 flex flex-col items-center">
-                        <div className="bg-gray-600 w-15 h-15 rounded-full flex justify-center items-center ">
+                        <div className="bg-gray-600 w-15 h-15 rounded-full flex justify-center items-center p-2">
                             <Image 
-                                src={img_path}
+                                src={photo}
                                 alt=""
                                 width={200}
                                 height={400}

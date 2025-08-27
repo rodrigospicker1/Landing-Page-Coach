@@ -27,24 +27,6 @@ export function Price() {
             }
         />
         <PriceCard
-            name="Ouro"
-            offer={true}
-            includeList={[
-                "Anamnese", 
-                "Avaliação diagnóstica", 
-                "Planejamento de treino personalizado(musculação e aeróbico)", 
-                "Avaliação da execução dos principais exercícios através de vídeos gravados pelo aluno",
-                "Suporte direto via WhatsApp",
-                "Controle de aproveitamento de treino semanal com feedback trimestral",
-                "Reavaliação diagnóstica a cada 3 meses para analisar o progresso",
-                "1 video chamada por mês com duração de aproximadamente 20 minutos para tirar as dúvidas em tempo real com um professor",
-                "1 aula assistida por mês com duração de 60 minutos acompanhada pelo professor"
-              ]
-            }
-            notIncludeList={[
-            ]}
-        />
-        <PriceCard
             name="Prata"
             offer={false}
             includeList={[
@@ -60,6 +42,24 @@ export function Price() {
             }
             notIncludeList={[
               "1 aula assistida por mês com duração de 60 minutos acompanhada pelo professor"
+            ]}
+        />
+        
+        <PriceCard
+            name="Ouro"
+            offer={true}
+            includeList={[
+                "Anamnese", 
+                "Avaliação diagnóstica", 
+                "Planejamento de treino personalizado(musculação e aeróbico)", 
+                "Avaliação da execução dos principais exercícios através de vídeos gravados pelo aluno",
+                "Suporte direto via WhatsApp",
+                "Controle de aproveitamento de treino semanal com feedback trimestral",
+                "Reavaliação diagnóstica a cada 3 meses para analisar o progresso",
+                "1 aula assistida por mês com duração de 60 minutos acompanhada pelo professor"
+              ]
+            }
+            notIncludeList={[
             ]}
         />
       </div>

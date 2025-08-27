@@ -22,9 +22,6 @@ export function Footer() {
                 <a href="#">
                   <Image src="/images/icon/facebook.png" alt="Facebook" width={25} height={25} />
                 </a>
-                <a href="#">
-                  <Image src="/images/icon/twitter.png" alt="Twitter" width={25} height={25} />
-                </a>
             </div>
           </div>
           

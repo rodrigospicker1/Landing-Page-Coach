@@ -13,14 +13,14 @@ type PriceCardProps = {
 
 export function PriceCard({ name, offer, includeList, notIncludeList }: PriceCardProps) {
   return (
-    <div className={` bg-gradient-to-b from-[#BFBFBF] via-[#0C0C0C] to-[#929292] p-0.5 rounded-lg relative overflow-hidden ${offer ? 'md:mb-15' : 'md:mt-15'}`}>
+    <div className={` bg-gradient-to-b from-[#BFBFBF] via-[#0C0C0C] to-[#929292] p-0.5 rounded-lg relative overflow-hidden`}>
         {
             offer && 
             <div className="absolute rotate-315 font-bold bg-gradient-to-br from-fuchsia-500 via-cyan-400 to-green-400 z-2 w-40 pl-8 ml-[-40px] text-sm p-1"> 
                 OFERTA
             </div>
         }
-        <div className="flex flex-col w-full bg-[linear-gradient(to_bottom,#252835_35%,#010101_98%)] rounded-lg p-4 relative h-full">
+        <div className="flex flex-col justify-between w-full bg-[linear-gradient(to_bottom,#252835_35%,#010101_98%)] rounded-lg p-4 relative h-full">
             
 
             <div className="text-white text-2xl font-bold m-2 text-center"> 
