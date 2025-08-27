@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { WHATSAPP_URL } from "@/constants/urls";
 
 export function AboutMe() {
   return (
@@ -50,29 +51,29 @@ export function AboutMe() {
 
         <div className="mt-20 md:mt-40 flex flex-col items-center justify-center px-4">
 
-            <div className="text-lg lg:text-4xl bg-clip-text text-center text-gray-200 mb-10 leading-10">
+            <div className="text-lg lg:text-4xl bg-clip-text text-center text-gray-200 md:mb-10 sm:mb-5 md:leading-10 sm:leading-8">
                 Seu corpo é reflexo do que <span className="text-[var(--brand-green)] font-bold ">você faz</span>.<br></br>
                 O que ele está dizendo sobre <span className="text-[var(--brand-green)] font-bold ">você?</span>
             </div>
 
-            <Button 
-                variant="ghost" 
+            <a 
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm lg:text-2xl bg-white text-gray-900 hover:bg-gray-100 hover:text-gray-900 font-bold 
-                    py-6 px-4 sm:py-5 sm:px-8 rounded-xl transition-all duration-300 transform hover:scale-105 min-w-fit
-                    sm:max-w-fit md:max-w-md"
+                    md:py-6 md:px-4 sm:py-6 sm:px-8 rounded-xl transition-all duration-300 transform hover:scale-105 min-w-fit
+                    sm:max-w-fit md:max-w-md text-center"
             >
                 Quero começar meu treino com acompanhamento
-            </Button>
+            </a>
             <div className="text-gray-400 text-xs lg:text-base flex items-center gap-2 mt-5 text-center sm:text-left">
-                <span>Clique acima e chame no WhatsApp. Dê o primeiro passo que os outros nós guiamos você!</span>
-                <Image
-                        src="/images/icon/whatsapp.png"
-                        alt="WhatsApp"
-                        width={20}
-                        height={20}
-                        className="w-4"
-                    />
-                {/* <a href="#" className="flex items-center gap-1 hover:opacity-80 transition-opacity">
+                <a 
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                >
+                    <span>Clique acima e chame no WhatsApp. Dê o primeiro passo que os outros nós guiamos você!</span>
                     <Image
                         src="/images/icon/whatsapp.png"
                         alt="WhatsApp"
@@ -80,7 +81,7 @@ export function AboutMe() {
                         height={20}
                         className="w-4"
                     />
-                </a> */}
+                </a>
             </div>
         </div>
 

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useState } from "react";
 import App from "./navbar";
+import { WHATSAPP_URL } from "@/constants/urls";
 
 export function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,9 +38,15 @@ export function Hero() {
             </div>
 
             <div className="mt-10">
-              <Button variant="ghost" className="text-xl bg-[var(--brand-green)] p-6 font-bold hover:p-7 hover:bg-[var(--brand-green)]">
-                Quero fazer parte desse time
-              </Button>
+              <a 
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="ghost" className="text-xl bg-[var(--brand-green)] p-6 font-bold hover:p-7 hover:bg-[var(--brand-green)]">
+                  Quero fazer parte desse time
+                </Button>
+              </a>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { WHATSAPP_URL } from "@/constants/urls";
 import { ArrowLongRightIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 
@@ -27,16 +28,22 @@ export function BenefitCard({ name, description, path }: BenefitCardProps) {
                         { name }
                     </div>
                 </div>
-                <div className="text-gray-400 mt-2 text-sm line-clamp-2 hover:line-clamp-none transition-all duration-300">
+                <div className="text-gray-400 mt-2 text-sm md:line-clamp-2 md:hover:line-clamp-none transition-all duration-300">
                     {description}
                 </div>
                 <div className="mt-4">
-                    <Button variant="ghost" className="w-full text-white hover:bg-gray-700 hover:text-white">
-                        <div className="flex items-center justify-between w-full">
-                            <span>Saiba mais</span>
-                            <ArrowLongRightIcon className="text-[var(--brand-green)] " />
-                        </div>
-                    </Button>
+                    <a 
+                        href={WHATSAPP_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Button variant="ghost" className="w-full text-white hover:bg-gray-700 hover:text-white">
+                            <div className="flex items-center justify-between w-full">
+                                <span>Saiba mais</span>
+                                <ArrowLongRightIcon className="text-[var(--brand-green)] " />
+                            </div>
+                        </Button>
+                    </a>
                 </div>
             </div>
     </div>

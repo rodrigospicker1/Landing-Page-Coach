@@ -16,7 +16,7 @@ export function Footer() {
                 />
             </a>
             <div className="flex gap-4">
-                <a href="#">
+                <a href="https://www.instagram.com/evertonjohn_assessoria" target="_blank" rel="noopener noreferrer">
                   <Image src="/images/icon/instagram.png" alt="Instagram" width={25} height={25} />
                 </a>
                 <a href="#">

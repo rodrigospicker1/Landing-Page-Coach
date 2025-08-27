@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { WHATSAPP_URL } from "@/constants/urls";
 import { ArrowLongRightIcon, CheckBadgeIcon } from "@heroicons/react/16/solid";
 import { XCircle } from "lucide-react";
 import Image from "next/image";
@@ -68,11 +69,17 @@ export function PriceCard({ name, offer, includeList, notIncludeList }: PriceCar
             
 
             <div className="flex items-center justify-center mt-4">
-            <button className="relative text-2xl text-white w-70 border border-[#3AB248] bg-[#323545] rounded-xl p-1 font-bold overflow-hidden group">
-                <span className="relative z-10">Quero saber mais</span>
-                <span className="absolute inset-0 bg-[#3AB248] transform scale-x-0 transition-transform duration-200 ease-in-out group-hover:scale-x-100 rounded-lg"></span>
-            </button>
-        </div>
+                <a 
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <button className="relative text-2xl text-white w-70 border border-[#3AB248] bg-[#323545] rounded-xl p-1 font-bold overflow-hidden group">
+                        <span className="relative z-10">Quero saber mais</span>
+                        <span className="absolute inset-0 bg-[#3AB248] transform scale-x-0 transition-transform duration-200 ease-in-out group-hover:scale-x-100 rounded-lg"></span>
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
   );
