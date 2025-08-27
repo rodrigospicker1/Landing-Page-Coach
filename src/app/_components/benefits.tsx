@@ -15,6 +15,19 @@ export function Benefits() {
         Benefícios
       </div>
 
+      <div className="flex justify-center mt-10">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/wuxNoxZQo4k"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          className="rounded-2xl shadow-lg"
+        ></iframe>
+      </div>
+
       <div className="w-full mt-10 px-4 sm:px-6 lg:px-8">
         <Carousel 
           opts={{

@@ -19,7 +19,7 @@ export function Footer() {
                 <a href="https://www.instagram.com/evertonjohn_assessoria" target="_blank" rel="noopener noreferrer">
                   <Image src="/images/icon/instagram.png" alt="Instagram" width={25} height={25} />
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/share/176esV3i7S/" target="_blank" rel="noopener noreferrer">
                   <Image src="/images/icon/facebook.png" alt="Facebook" width={25} height={25} />
                 </a>
             </div>
