@@ -68,7 +68,7 @@ export function PriceCard({ name, offer, includeList, notIncludeList }: PriceCar
             }
             
 
-            <div className="flex items-center justify-center mt-4">
+            <div className="flex items-center justify-center mt-4 mb-6">
                 <a 
                     href={WHATSAPP_URL}
                     target="_blank"

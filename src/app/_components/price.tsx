@@ -11,18 +11,18 @@ export function Price() {
             name="Bronze"
             offer={false}
             includeList={[
-                "Anamnese", 
-                "Avaliação diagnóstica", 
-                "Planejamento de treino personalizado(musculação e aeróbico)", 
-                "Avaliação da execução dos principais exercícios através de vídeos gravados pelo aluno",
-                "Suporte direto via WhatsApp",
-                "Controle de aproveitamento de treino semanal com feedback trimestral",
-                "Reavaliação diagnóstica a cada 3 meses para analisar o progresso"
+                "Coleta de dados para anamnese", 
+                "Montagem de treino (no App mfit)", 
+                "Suporte para dúvidas via whatsapp.", 
+                "Coleta de aproveitamento de treino (semanal).",
+                "Coleta de vídeo com a execução dos principais exercícios de musculação para avaliação.",
+                "Coleta de feedback para reajuste (mensal)."
               ]
             }
             notIncludeList={[
-                "1 video chamada por mês com duração de aproximadamente 20 minutos para tirar as dúvidas em tempo real com um professor", 
-                "1 aula assistida por mês com duração de 60 minutos acompanhada pelo professor"
+                "Avaliação física presencial EJ Smart Test",
+                "Reavaliação diagnóstica a cada 3 meses para analisar o progresso",
+                "1 treino assistido por mês com duração de 1h"
               ]
             }
         />
@@ -30,18 +30,18 @@ export function Price() {
             name="Prata"
             offer={false}
             includeList={[
-                "Anamnese", 
-                "Avaliação diagnóstica", 
-                "Planejamento de treino personalizado(musculação e aeróbico)", 
-                "Avaliação da execução dos principais exercícios através de vídeos gravados pelo aluno",
-                "Suporte direto via WhatsApp",
-                "Controle de aproveitamento de treino semanal com feedback trimestral",
-                "Reavaliação diagnóstica a cada 3 meses para analisar o progresso",
-                "1 video chamada por mês com duração de aproximadamente 20 minutos para tirar as dúvidas em tempo real com um professor", 
+                "Coleta de dados para Anamnese.", 
+                "Avaliação física presencial EJ Smart Test",
+                "Montagem de treino (no App mfit) com base no resultado da EJ Smart Test e no seu objetivo",
+                "Suporte para dúvidas via whatsapp",
+                "Coleta de aproveitamento de treino (semanal)",
+                "Coleta de vídeo com a execução dos principais exercícios de musculação para avaliação.",
+                "Coleta de feedback para reajuste (mensal).",
+                "Reavaliação a cada 3 meses.",
               ]
             }
             notIncludeList={[
-              "1 aula assistida por mês com duração de 60 minutos acompanhada pelo professor"
+              "1 treino assistido por mês com duração de 1h"
             ]}
         />
         
@@ -49,14 +49,15 @@ export function Price() {
             name="Ouro"
             offer={true}
             includeList={[
-                "Anamnese", 
-                "Avaliação diagnóstica", 
-                "Planejamento de treino personalizado(musculação e aeróbico)", 
-                "Avaliação da execução dos principais exercícios através de vídeos gravados pelo aluno",
-                "Suporte direto via WhatsApp",
-                "Controle de aproveitamento de treino semanal com feedback trimestral",
-                "Reavaliação diagnóstica a cada 3 meses para analisar o progresso",
-                "1 aula assistida por mês com duração de 60 minutos acompanhada pelo professor"
+                "Coleta de dados para Anamnese.", 
+                "Avaliação física presencial EJ Smart Test",
+                "Montagem de treino (no App mfit) com base no resultado da EJ Smart Test e no seu objetivo",
+                "Suporte para dúvidas via whatsapp",
+                "Coleta de aproveitamento de treino (semanal)",
+                "Coleta de vídeo com a execução dos principais exercícios de musculação para avaliação.",
+                "Coleta de feedback para reajuste (mensal).",
+                "Reavaliação a cada 3 meses.",
+                "1 treino assistido por mês com duração de 1h"
               ]
             }
             notIncludeList={[
