@@ -1,4 +1,5 @@
-import { TestimonialCard } from "./card/testimonial_card";
+"use client"
+
 import {
   Carousel,
   CarouselContent,
@@ -24,19 +25,28 @@ export function Testimonials() {
         >
           <CarouselContent className="-ml-1">
             {[
-              { img: "", name: "Natália", star: 5, testimonial: "Pensa na felicidade que eu estou, é o primeiro dia.. mas sinto que já venci a obesidade. com certeza com todo seu conhecimento, ensinamento e apoio até mesmo psicológico que você da para seus alunos!" },
-              { img: "", name: "Bruna", star: 5, testimonial: "Muito a agredecer por todo esse processo de mudança interna e externa🙌🙏 Um ótimo professional!" },
-              { img: "", name: "Tales", star: 5, testimonial: "Ótimo experiência! Não tive dificuldade com os treinos e percebi melhora estética e qualidade de vida desde que comecei a fazer." },
-            ].map((testimonial, index) => (
+              { src: "/videos/testimonials/testimonial_01.mp4",  },
+              { src: "/videos/testimonials/testimonial_02.mp4",  },
+              { src: "/videos/testimonials/testimonial_03.mp4",  },
+            ].map((item, index) => (
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
-                  <TestimonialCard 
-                    img_path={testimonial.img} 
-                    name={testimonial.name} 
-                    star={testimonial.star}
-                    testimonial={testimonial.testimonial}
-                    index={index}
-                  />
+                  <div
+                    className="w-full max-w-[300px] mx-auto aspect-[9/16] rounded-lg overflow-hidden bg-black cursor-pointer"
+                  >
+                    <video
+                      src={item.src}
+                      className="w-full h-full object-cover"
+                      muted
+                      autoPlay
+                      loop
+                      controls
+                      playsInline
+                      preload="metadata"
+                      onClick={(e) => e.stopPropagation()}
+                      onMouseDown={(e) => e.stopPropagation()}
+                    />
+                  </div>
                 </div>
               </CarouselItem>
             ))}
